@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="com.bellinfo.onlinepersonalbanking.email.Email"/>
+<fullyQualifiedTypeName name="com.bellinfo.onlinepersonalbanking.model.UserRegistrationModelClass"/>
+</qualifiedTypeNameHistroy>

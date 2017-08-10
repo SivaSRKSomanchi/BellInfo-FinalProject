@@ -1,0 +1,5 @@
+package com.bellinfo.onlinepersonalbanking.email;
+
+public class Email {
+
+}
