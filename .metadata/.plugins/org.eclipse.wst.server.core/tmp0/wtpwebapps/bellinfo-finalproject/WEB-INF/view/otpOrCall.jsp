@@ -1,21 +1,75 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
+<%@include file="afterloginHomePage.jsp"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+/* body {
+	background:
+		url(http://www.itsecurityguru.org/wp-content/uploads/2016/11/Banking-Security.jpg)
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} */
+
+.move{
+float:left;
+margin-left:5px;
+}
+.jumbotron{
+margin-left:5px;
+float:left;
+}
+
+h2{
+text-align:center;
+
+
+}
+</style>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	
+
 </head>
 <body>
-	<form:form action="otp1">
-		<label>Please Select one of the ways to verify your Account- </label>
-		<label>Text<input type="checkbox" Value = "TEXT" name = "mode"></label>
-		<label>Call<input type="checkbox" Value = "CALL" name ="mode"/></label>
-		<input type = "submit" />
+	<div class="container" style="margin-top: 5%;">
+		<div class="row">
 		
-	</form:form>
+			<div class="jumbotron" style="box-shadow: 1px 1px 2px #000000;">
+			<div class="move">
+				<h2>Please Select one of the ways to verify
+					your Account-</h2>
+					</div>
+				<center>
+
+					<form:form action="otp1">
+						<label> </label>
+						<label>Text<input type="checkbox" Value="TEXT" name="mode"></label>
+						<label>Call<input type="checkbox" Value="CALL" name="mode" /></label>
+						<input type="submit" />
+
+					</form:form>
+
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+
 </body>
 </html>
+
+

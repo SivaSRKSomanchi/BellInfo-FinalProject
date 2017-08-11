@@ -13,15 +13,15 @@
 	crossorigin="anonymous">
 <style type="text/css">
 
-/* body {
+body {
 	background:
-		url(https://s-media-cache-ak0.pinimg.com/originals/ba/a3/aa/baa3aa1cca168dac8ad8fe2c20bef1f5.jpg)
+		url(http://les-sites-a-la-une.com/wp-content/uploads/2015/02/meilleur-antivirus-performant.jpg)
 		no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-} */
+} 
 
 h2{
 font-size: 2.0rem;
@@ -54,7 +54,7 @@ font-size: 2.0rem;
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">PPNH</a>
+			<a href="#" class="navbar-brand">BOI</a>
 		</div>
 		<div class="collapse navbar-collapse" id="mobileDisplay">
 			<ul class="nav navbar-nav ">

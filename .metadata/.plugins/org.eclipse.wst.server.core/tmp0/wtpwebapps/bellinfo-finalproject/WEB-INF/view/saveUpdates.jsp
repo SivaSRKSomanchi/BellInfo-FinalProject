@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@include file="afterloginHomePage.jsp"%>  
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
@@ -8,6 +9,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Registration Page</title>
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
+
 </head>
 <body>
 
@@ -20,65 +39,91 @@
 	<div id="container">
 		<h3>Update Your Details Here..</h3>
 	</div>
-	<form:form action="savedata"
-		modelAttribute="userRegis" method="POST">
-		
+	<form:form action="savedata" modelAttribute="userRegis" method="POST">
+
 		<!-- NEED TO ASSOCIATE WITH THE CUSOTMER ID -->
-		<form:hidden path = "id"/> 
+		<form:hidden path="id" />
+
 		<table>
+			<tr>
+				<th>Detail</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td><label>Account Number:</label></td>
+				<td><form:input path="accountNumber" /></td>
+			</tr>
+			<tr>
+				<td><label>CIF Number:</label></td>
+				<td><form:input path="cifNumber" /></td>
+			</tr>
+			<tr>
+				<td><label>BranchCode:</label></td>
+				<td><form:input path="branchCode" /></td>
+			</tr>
+
+			<tr>
+				<td><label>Country:</label></td>
+				<td><form:input path="country" /></td>
+			</tr>
+
+			<tr>
+				<td><label>PhoneNumber:</label></td>
+				<td><form:input path="phoneNumber" /></td>
+			</tr>
+
+
+			<tr>
+				<td><label>Username:</label></td>
+				<td><form:input path="username" /></td>
+			</tr>
+			<tr>
+				<td><label>Password:</label></td>
+				<td><form:input path="password" /></td>
+			</tr>
+			<tr>
+				<td><label>First Name:</label></td>
+				<td><form:input path="firstName" /></td>
+			</tr>
+
+			<tr>
+				<td><label>Last Name:</label></td>
+				<td><form:input path="lastName" /></td>
+			</tr>
+
+			<tr>
+				<td><label>Monthly Salary:</label></td>
+				<td><form:input path="salary" /></td>
+			</tr>
+			<tr>
+				<td><label>Email:</label></td>
+				<td><form:input path="email" /></td>
+			</tr>
+
+			<tr>
+				<td><label>Click Here and Save. Login Again =></label></td>
+				<td><input type="submit" value="Save" class="save" /></td>
+			</tr>
+		</table>
+
+	</form:form>
+</body>
+</html>
+
+
+
+<%-- <table>
 			<tbody>
-				<tr>
-					<td><label>Account Number:</label></td>
-					<td><form:input path="accountNumber"/></td>
-				</tr>
-				<tr>
-					<td><label>CIF Number:</label></td>
-					<td><form:input path="cifNumber" /></td>
-				</tr>
-				<tr>
-					<td><label>BranchCode:</label></td>
-					<td><form:input path="branchCode" /></td>
-				</tr>
-
-				<tr>
-					<td><label>Country:</label></td>
-					<td><form:input path="country" /></td>
-				</tr>
-
-				<tr>
-					<td><label>PhoneNumber:</label></td>
-					<td><form:input path="phoneNumber" /></td>
-				</tr>
-				<tr>
-					<td><label>Username:</label></td>
-					<td><form:input path="username"/></td>
-				</tr>
-				<tr>
-					<td><label>Password:</label></td>
-					<td><form:input path="password" /></td>
-				</tr>
-				<tr>
-					<td><label>First Name:</label></td>
-					<td><form:input path="firstName" /></td>
-				</tr>
-				<tr>
-					<td><label>Last Name:</label></td>
-					<td><form:input path="lastName" /></td>
-				</tr>
-				<tr>
-					<td><label>Monthly Salary:</label></td>
-					<td><form:input path="salary" /></td>
-				</tr>
-				<tr>
-					<td><label>Email:</label></td>
-					<td><form:input path="email" /></td>
-				</tr>
+			
+				
+			
+			
+				
+				
+				
 				<tr>
 					<td><label></label></td>
 					<td><input type="submit" value="Save" class="save"/></td>
 				</tr>
 			</tbody>
-		</table>
-	</form:form>
-</body>
-</html>
+		</table> --%>

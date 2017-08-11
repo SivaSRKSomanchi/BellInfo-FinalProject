@@ -20,7 +20,7 @@
 } */
 body {
 	background:
-		url(https://cloudfront.ualberta.ca/-/media/medicine/departments/medicine/divisions/cardiology/cardimage.jpg?w=1200)
+		url(http://quinnassociate.com/wp-content/uploads/2016/11/Online-Bank.jpg)
 		no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
